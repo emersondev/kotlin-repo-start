@@ -12,6 +12,7 @@
  */
 
 /** Lembrando sobre unidades de medida
+ *
  * 1 Byte = 8 bits
  * 1 kilobyte (kB) = 1024 bytes
  * 1 megabyte (MB) = 1024 kilobytes
