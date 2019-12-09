@@ -9,6 +9,7 @@ fun calculoSemRetorno(a: Int, b: Int, c: Int): Unit {
 }
 
 // função de uma única linha pode ser montada dessa forma
+// estrutura: função --- (parâmetro) ---- tipo do retorno ---- retorno
 fun funcoesDeUmaLinha(nome: String): String = "Meu nome é ${nome}";
 
 fun main() {
