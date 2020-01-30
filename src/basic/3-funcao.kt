@@ -12,11 +12,16 @@ fun calculoSemRetorno(a: Int, b: Int, c: Int): Unit {
 // estrutura: função --- (parâmetro) ---- tipo do retorno ---- retorno
 fun funcoesDeUmaLinha(nome: String): String = "Meu nome é ${nome}";
 
+fun funcoesComRetorno(frase: String): String {
+    return frase;
+}
+
 fun main() {
     val a = 10;
     val b = 20;
     val c = 30;
 
     calculoSemRetorno(a, b, c);
+    println(funcoesComRetorno("oiiiiii tudo bem?"));
     println("A soma com usando o retorno é: ${calculoComTipoDeRetorno(a, b, c)}");
 }
