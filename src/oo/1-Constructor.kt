@@ -16,7 +16,7 @@ class Pessoa(var nome: String) {
 
 fun main() {
     // no kotlin não é necessário a palavra new ao instanciar um objeto
-    val p1: Pessoaa = Pessoaa("Emerson", 1993);
-    val p2: Pessoaa = Pessoaa("Jeager");
+    val p1: Pessoa = Pessoa("Emerson", 1993);
+    val p2: Pessoa = Pessoa("Jeager");
     p1.saudacoes();
 }

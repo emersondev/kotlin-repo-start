@@ -13,7 +13,7 @@ data class Param(var b: Boolean, var s: String, var i: Int);
 fun teste(atributos: Param) {
     println("printando primeiro atributo: ${atributos.b}");
     println("printando segundo atributo: ${atributos.s}");
-    println("printando terceiro atributo: ${atributos.b}");
+    println("printando terceiro atributo: ${atributos.i}");
     println("Printando somente a instância: $atributos");
 }
 
@@ -41,7 +41,7 @@ fun main() {
 
     // Conceito de cópia exata
     val t3 = t2.copy(); // data class faz uma instância ao chamar o método copy
-    println(t3);
+    println("Printando t3: $t3");
 
     // usando um data class
     var parametros = Param(true, "setando parametros", 3);
