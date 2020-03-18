@@ -23,10 +23,10 @@ enum class Prioridade3(val id: Int) {
 }
 
 // Uma classe só com parâmetros // classes podem agregar dados ou parâmetros
-class Alarme(var descricao:String, p: Prioridade2)
+class Alarme(var descricao: String, p: Prioridade2)
 
 fun main() {
-    // Alarme("Alarme para acordar", Prioridade2.ALTA);
+    Alarme("Alarme para acordar", Prioridade2.ALTA);
 
     println("Prioridade 1: ${Prioridade1.BAIXA}");
 

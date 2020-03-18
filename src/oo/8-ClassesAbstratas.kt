@@ -11,7 +11,7 @@ abstract class Mamifero(var nome: String) {
 }
 
 class Cachorro(nome: String, peso: Float) : Mamifero(nome) {
-
+    // init acontece assim que é instanciada a classe
     init {
         this.peso = peso
     }
