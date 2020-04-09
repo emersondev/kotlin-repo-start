@@ -26,6 +26,7 @@ interface interface2 {
     fun ola();
 }
 
+// não tenho herança multipla, mas posso implementar mais de uma interface
 class ImplementadaInterface : interface1, interface2 {
     override fun ola() {
         super<interface1>.ola()
@@ -34,6 +35,6 @@ class ImplementadaInterface : interface1, interface2 {
 
 fun main() {
 
-    ImplementadaInterface.ola();
+    //ImplementadaInterface.ola();
 
 }

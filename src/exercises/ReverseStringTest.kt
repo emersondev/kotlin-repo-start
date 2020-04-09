@@ -5,7 +5,7 @@ import org.junit.Test
 
 class ReverseStringTest {
 
-    @Test fun reverseUsingSB() {
+    @Test fun reverseUsingSBTest() {
         Assert.assertEquals("bs niltok", reverseUsingSB("kotlin sb"));
     }
 

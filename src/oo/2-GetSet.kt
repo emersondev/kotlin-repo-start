@@ -2,6 +2,8 @@ package oo
 
 class Maquina() {
 
+    // boilerplate ---> código que tem que criar sempre
+
     var nucleos: Int = 0; get() {
         println("Acessado get")
         return field; // se colocar nucleos, ele chama de novo a variável núcleos, field acessa o
