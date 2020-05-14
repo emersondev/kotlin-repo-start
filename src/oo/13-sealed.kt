@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
     val result: Result = r1.execute()
     when(result) {
         is Result.Sucess -> {
-            println("Deu sucesso")
+            println("Deu certo")
         }
         is Result.Error -> {
             println("Deu erro")

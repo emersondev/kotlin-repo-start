@@ -15,7 +15,7 @@ fun top() {
     }
 
     log("Inicio") // log já identifica a função interna
-    oo.log("") // caso queira uma externa, tenho que passar o pacote
+    oo.log("oi") // caso queira uma externa, tenho que passar o pacote
     val interval = 1..10000000
     var sum: Double = 0.0
     for(i in interval) {

@@ -1,7 +1,9 @@
 package oo
 
+// somando instâncias de classe
+
 data class Fraction(val numerator: Int, val denominator: Int) {
-    // overload de operadores (em especifico para frações)
+    // overload de operadores (em especifico soma para frações)
     operator fun plus(add: Fraction): Fraction {
         if (denominator == add.denominator) {
             return Fraction(numerator + add.numerator, denominator)
