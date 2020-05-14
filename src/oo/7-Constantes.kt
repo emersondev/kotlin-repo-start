@@ -22,6 +22,7 @@ class Constantes private constructor(){
 }
 
 fun main() {
+
     // companion object
     println(Constantes.TABLE);
     Constantes.teste();

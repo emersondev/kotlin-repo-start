@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
     operator2(1,2, ::multiply2)
 
     // aqui trago uma função pra variável
-    val l1 = { a: Int, b: Int -> a + b}
+    val l1 = {a: Int, b: Int -> a + b}
 
     // aqui declaro primeiro o tipo dos parametros e o retorno que espero e depois faço a função
     val l2: (Int, Int) -> Int = {x, y -> x + y}

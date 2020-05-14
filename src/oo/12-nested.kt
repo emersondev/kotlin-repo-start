@@ -4,7 +4,7 @@ class Computer(val processorModel: String) {
 
 
     // inner classes são classes internas, caso não tivesse o inner
-    // não conseguiria acessar processorModel
+    // não conseguiria acessar processorModel - apague o inner para ver
     inner class Memory {
         fun getMemoryLevel(): Int {
             println(processorModel)

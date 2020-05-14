@@ -12,10 +12,11 @@ fun sum(x:Int, y: Int) = x + y
 fun multiply(x: Int, y:Int): Int = x * y
 
 /**
- * explicando: essa função é específica para listas do tipo List e inteiras
- * o op vai receber um inteiro e somente executa (por causa do unit)
+ * explicando: essa função é específica para listas do tipo List e inteiras (Int)
+ * o op vai receber um inteiro(Int) e somente executa sem retorno(por causa do unit)
  * for fala para cada item na lista (this referencia o List<Int>)
- * execute a função passada por parâmetro (que vai substituir o op, pois o op referencia uma função
+ * execute a função passada por parâmetro (que vai substituir o op,
+ * pois o op referencia uma função
  * que vai ser passada, no caso do exemplo o println)
  */
 fun List<Int>.paraCadaInt(op: (Int) -> Unit) {
@@ -32,14 +33,16 @@ fun <T> Iterable<T>.paraTodos(op: (T) -> Unit) {
 
 fun main(args: Array<String>) {
 
+    // no lugar da função op, execute a função sum, ::FUNÇÃO é a regra pra executar
+    // os parâmetros da ::FUNÇÃO são o "x" e o "y" informados
+    operator(1,2, ::sum)
+    operator(1,2, ::multiply)
+
     val list = listOf(1,2,3,4,5)
     list.forEach{println(it)}
     list.paraCadaInt{println(it)}
 
     val map = mapOf( Pair("Paris", "França"))
-    map.values.paraTodos { println(it) } // it referencia os itens existentes dentro de map.value
+    map.values.paraTodos { println(it) } // it referencia os itens existentes dentro de map.values
 
-    // no lugar da função op, execute a função sum, ::FUNÇÃO é a regra pra executar
-    operator(1,2, ::sum)
-    operator(1,2, ::multiply)
 }
