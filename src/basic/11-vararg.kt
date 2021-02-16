@@ -7,14 +7,14 @@ package basic
  * divido a média pelo número de notas atribuídas
  */
 fun media(vararg notas: Float): Float {
-    var media = 0f;
+    var media = 0f
     if(notas.isNotEmpty()) {
         for(nota in notas) {
-            media += nota;
+            media += nota
         }
-        media /= notas.size;
+        media /= notas.size
     }
-    return media;
+    return media
 }
 
 /**
@@ -25,7 +25,7 @@ fun media(vararg notas: Float): Float {
  */
 fun <T> argumentosAleatorios(vararg valores: T){
     for (valor in valores) {
-        println("valores aleatórios para a função: $valor");
+        println("valores aleatórios para a função: $valor")
     }
 }
 fun main() {
@@ -33,12 +33,12 @@ fun main() {
 //    argumentosAleatorios("weibfe", 3213, 12f, false, "", "hahaha");
 
     val str = "lorem ipsum";
-    println("Bota a primeira letra em maíusculo: ${str.capitalize()}");
-    println("Bota a primeira letra em minúsculo: ${str.decapitalize()}");
-    println("Procura o argumento passado por parâmetro, existe? ${str.contains("lo")}");
-    println("Começa com l? ${str.startsWith("l")}");
-    println("Comela com L? ${str.startsWith("L")}");
+    println("Bota a primeira letra em maíusculo: ${str.capitalize()}")
+    println("Bota a primeira letra em minúsculo: ${str.decapitalize()}")
+    println("Procura o argumento passado por parâmetro, existe? ${str.contains("lo")}")
+    println("Começa com l? ${str.startsWith("l")}")
+    println("Comela com L? ${str.startsWith("L")}")
 
     // como se fosse a função argumentosAleatorios
-    arrayOf(1,2.4,65,123,"dsf","").size;
+    arrayOf(1,2.4,65,123,"dsf","").size
 }

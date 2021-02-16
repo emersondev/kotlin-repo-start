@@ -2,20 +2,20 @@ fun operacao(a: Int, b: Int, c: String) {
     // when em formato de switch
     when (c) {
         "Soma" -> {
-            println(a + b);
+            println(a + b)
         }
         "Subtração" -> {
-            println(a - b);
+            println(a - b)
         }
         "Multiplicação" -> {
-            println(a * b);
+            println(a * b)
         }
         "Divisão" -> {
-            println(a / b);
+            println(a / b)
         }
         // seria o default do switch
         else -> {
-            println("Operação não existente");
+            println("Operação não existente")
         }
     }
 
@@ -26,14 +26,14 @@ fun operacao(a: Int, b: Int, c: String) {
      */
     when {
         a in 1..99 -> {
-            println("Variável 'a' maior que zero e menor que cem");
+            println("Variável 'a' maior que zero e menor que cem")
         }
     }
 
     // when com condição
     when {
         b > 0 && b < 100 -> {
-            println("Variável 'b' maior que zero e menor que cem");
+            println("Variável 'b' maior que zero e menor que cem")
         }
     }
 

@@ -27,9 +27,9 @@ class Computador(marca: String, val nucleos: Int) : Maquinario(marca) {
 fun main() {
     val c: Computador = Computador("positivo", -1)
     with(c) {
-        ligar();
-        processar();
-        minhaMarca();
+        ligar()
+        processar()
+        minhaMarca()
         overload(19, "ahhh")
         overload(12)
     }

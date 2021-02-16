@@ -1,15 +1,15 @@
 fun main() {
-    var nome: String;
-    var index: Int = 0;
+    var nome: String
+    var index: Int = 0
     while (index < 100) {
-        nome = "Emerson";
-        println(nome);
-        index++;
+        nome = "Emerson"
+        println(nome)
+        index++
     }
 
-    var l: Int = 10;
+    var l: Int = 10
     do {
-        println(l);
-        l += 5;
-    } while (l < 100);
+        println(l)
+        l += 5
+    } while (l < 100)
 }

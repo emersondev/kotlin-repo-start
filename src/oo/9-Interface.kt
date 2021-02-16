@@ -2,10 +2,10 @@ package oo
 
 // interface não pode ser inicializado nada, nem variáveis pode ser atribuídas
 interface Maquinaa {
-    var peso: Float;
+    var peso: Float
     fun ligar()
     fun desligar() {
-        println("Off");
+        println("Off")
     }
 }
 
@@ -19,11 +19,11 @@ class Computadorr(override var peso: Float) : Maquinaa {
 interface interface1 {
     fun ola() {
         println("Interface 1");
-    };
+    }
 }
 
 interface interface2 {
-    fun ola();
+    fun ola()
 }
 
 // não tenho herança multipla, mas posso implementar mais de uma interface
@@ -35,6 +35,6 @@ class ImplementadaInterface : interface1, interface2 {
 
 fun main() {
 
-    //ImplementadaInterface.ola();
+//    ImplementadaInterface.ola()
 
 }

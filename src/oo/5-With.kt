@@ -4,18 +4,18 @@ class Maquinas() {
 
     var nucleos: Int = 0; get() {
         println("Acessado get")
-        return field;
+        return field
     } set(value) {
         println("Acessado set")
-        field = (10 + value);
+        field = (10 + value)
     }
 
     fun ligar() {
-        println("ligou");
+        println("ligou")
     }
 
     fun processar() {
-        println("processou");
+        println("processou")
     }
 
     fun desligar() {
@@ -25,17 +25,17 @@ class Maquinas() {
 }
 
 fun main() {
-    var m = Maquinas();
+    var m = Maquinas()
     // se somente colocarmos o + ou só o =, ele não entra no get e set
-    m.nucleos += 5;
-    println("O resultado é: ${m.nucleos}");
+    m.nucleos += 5
+    println("O resultado é: ${m.nucleos}")
 
     // com with, você consegue usar mais de um método ao mesmo tempo de uma variável, sem tem que
     // ficar usando ela, ex: m.ligar(), podendo usar o método direto
     with(m) {
-        ligar();
-        processar();
-        desligar();
+        ligar()
+        processar()
+        desligar()
     }
 
 }
