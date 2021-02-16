@@ -2,11 +2,11 @@ package oo
 
 abstract class Mamifero(var nome: String) {
 
-    var peso: Float = 0f;
+    var peso: Float = 0f
 
-    abstract fun falar();
+    abstract fun falar()
     fun dormir() {
-        println("Estou dormindo");
+        println("Estou dormindo")
     }
 }
 
@@ -17,13 +17,13 @@ class Cachorro(nome: String, peso: Float) : Mamifero(nome) {
     }
 
     override fun falar() {
-        println("au au");
+        println("au au")
     }
 }
 
 class Gato(nome: String) : Mamifero(nome) {
     override fun falar() {
-        println("miau");
+        println("miau")
     }
 }
 
