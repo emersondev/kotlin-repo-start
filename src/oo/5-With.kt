@@ -25,9 +25,8 @@ class Maquinas() {
 }
 
 fun main() {
-    var m = Maquinas()
-    // se somente colocarmos o + ou só o =, ele não entra no get e set
-    m.nucleos += 5
+    val m = Maquinas()
+    m.nucleos = 5
     println("O resultado é: ${m.nucleos}")
 
     // com with, você consegue usar mais de um método ao mesmo tempo de uma variável, sem tem que

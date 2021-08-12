@@ -16,8 +16,7 @@ class Maquina() {
 }
 
 fun main() {
-    var m = Maquina()
-    // se somente colocarmos o + ou só o =, ele não entra no get e set
-    m.nucleos += 5
+    val m = Maquina()
+    m.nucleos = 5
     println("O resultado é: ${m.nucleos}")
 }
